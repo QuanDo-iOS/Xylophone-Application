@@ -14,8 +14,33 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
 
-
+    @IBAction func buttonC(_ sender: UIButton) {
+        
+    }
     
-
+    @IBAction func buttonD(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func buttonE(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func butotnF(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func buttonG(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func buttonA(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func buttonB(_ sender: UIButton) {
+        
+    }
+    
 }
 
