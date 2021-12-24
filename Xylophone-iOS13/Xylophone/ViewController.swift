@@ -7,40 +7,23 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
+    var player: AVAudioPlayer!
 
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
-    @IBAction func buttonC(_ sender: UIButton) {
-        
-    }
     
-    @IBAction func buttonD(_ sender: UIButton) {
-        
-    }
     
-    @IBAction func buttonE(_ sender: UIButton) {
-        
+    @IBAction func pressedButton(_ sender: UIButton) {
+        playSound(title: sender.currentTitle!)
     }
-    
-    @IBAction func butotnF(_ sender: UIButton) {
-        
+    func playSound(title : String) {
+            let url = Bundle.main.url(forResource: title, withExtension: "wav")
+            player = try! AVAudioPlayer(contentsOf: url!)
+            player.play()
     }
-    
-    @IBAction func buttonG(_ sender: UIButton) {
-        
-    }
-    
-    @IBAction func buttonA(_ sender: UIButton) {
-        
-    }
-    
-    @IBAction func buttonB(_ sender: UIButton) {
-        
-    }
-    
 }
-
+    
